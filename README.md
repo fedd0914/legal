@@ -1,4 +1,4 @@
-# Proyecto RRHH IPDUV
+# Proyecto LEGAL IPDUV
 Descripción
 
 
@@ -18,9 +18,9 @@ Clonar el repositorio y luego
 
 
 ```console
-cd rrhh
+cd legal
 docker-compose up -d
-docker exec rrhh composer install
+docker exec legal-php composer install
 ```
 
 ## Agregar al .env
@@ -42,7 +42,7 @@ DB_PASSWORD=admin
 
 
 ```console
-docker exec rrhh-php php artisan migrate
+docker exec legal-php php artisan migrate
 ```
 
 

@@ -4,7 +4,7 @@
 version: '3.1'
 services:
     mariadb:
-        container_name: rrhh-db
+        container_name: legal-db
         image: 'mariadb:10.10'
         working_dir: /application
         volumes:
@@ -19,7 +19,7 @@ services:
 
     webserver:
         image: 'nginx:alpine'
-        container_name: rrhh-webserver
+        container_name: legal-webserver
         working_dir: /application
         volumes:
             - '.:/application'
@@ -29,7 +29,7 @@ services:
 
     php-fpm:
         build: phpdocker/php-fpm
-        container_name: rrhh-php
+        container_name: legal-php
         working_dir: /application
         volumes:
             - '.:/application'

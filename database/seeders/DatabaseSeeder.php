@@ -13,6 +13,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        $this->call(AreaTableSeeder::class);
+        $this->call(UserTableSeeder::class);
+        $this->call(ExpedienteTableSeeder::class);
         // User::factory(10)->create();
     }
 }
